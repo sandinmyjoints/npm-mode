@@ -96,7 +96,8 @@ nil."
 (defun npm-mode-npm-init ()
   "Run the npm init command."
   (interactive)
-  (npm-mode--exec-process "npm init"))
+  ;; (npm-mode--exec-process "npm init")
+  (compile "npm init" t))
 
 (defun npm-mode-npm-install ()
   "Run the 'npm install' command."
